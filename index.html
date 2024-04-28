@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/public/css/index.css">
+    <title> tpm | Home </title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a class="header" href="/">
+                TPM
+                </a>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="/developers">Devs</a></li>
+                <li class="navbar-item"><a href="/docs">Docs</a></li>
+                <li class="navbar-item"><a href="/contact">Inquiries</a></li>
+                <li class="navbar-item navbar-login"><a href="/login">SIGN-IN</a></li>
+                <li class="navbar-item navbar-signup"><a href="/signup">SIGN-UP</a></li>                
+            </ul>
+        </div>
+    </nav>
+    <section id="container">
+        <div id="left-container-content">
+            <h1 class="title">TPM Registry</i></h1>
+            <p class="description">Browse the community's custom made plugins.</p>
+        </div>
+        <div id="right-container-content">
+            <input class="search" id="plugin-search" type="text" placeholder="Search plugins (CTRL + Z)">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </section>
+    <div id="plugin-display-grid">
+    <!--
+        <div id="plugin-card">
+            <div id="plugin-img"></div>
+            <div id="plugin-body">
+                <h1>Calculator Command</h1>
+                <p class="pl-author">by <a class="pl-author-identifier" href="/developers/fbpro123">fbpro123ABC</a></p>
+                <p class="pl-des">A calculator made in Swash.</p>  
+                <div id="plugin-footer">
+                    <a class="download-pl" href="/Downloads?id=325">
+                        <i class="fa-solid fa-download"></i>
+                        <span>View</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    -->
+    </div>
+<script>
+        document.addEventListener('keydown', function(event) {
+        // Check if CTRL + K is pressed
+        if (event.ctrlKey && event.key === 'z') {
+            event.preventDefault(); // Prevent default browser behavior (e.g., opening bookmarks in some browsers)
+        
+            // Focus on the target element
+            document.getElementById('plugin-search').focus();
+        }
+    });
+</script>
+</body>
+<script src="https://kit.fontawesome.com/96159f4e6d.js" crossorigin="anonymous"></script>
+</html>
